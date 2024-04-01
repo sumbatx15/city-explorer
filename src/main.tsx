@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Main } from "./pages/main";
+import { Main } from "./pages/Main/page";
 import { theme } from "./theme/theme";
 
 const router = createBrowserRouter([
@@ -19,7 +19,7 @@ const queryClient = new QueryClient({
     queries: {
       refetchOnMount: false,
       refetchOnWindowFocus: false,
-      staleTime: 1000 * 60 * 5,
+      staleTime: 1000 * 60 * 60,
     },
   },
 });
